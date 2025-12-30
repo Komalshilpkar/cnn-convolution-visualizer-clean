@@ -14,6 +14,6 @@ and pooling work inside CNNs.
 HTML, CSS, JavaScript
 
 ## Live Demo
-https://github.com/Komalshilpkar/cnn-convolution-visualizer-clean.git
+https://komalshilpkar.github.io/cnn-convolution-visualizer-clean/
 
 
