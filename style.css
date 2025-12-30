@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  gap: 4px;
+}
+
+.grid.small {
+  grid-template-columns: repeat(3, 50px);
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border: 1px solid #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cell.highlight {
+  background: #ffeb3b;
+  transform: scale(1.05);
+}
+
+input.image-input,
+input.kernel-input {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  font-weight: bold;
+}
+
+button {
+  padding: 6px 12px;
+  margin-right: 5px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+pre {
+  background: black;
+  color: #00ff00;
+  padding: 10px;
+  width: 260px;
+  height: 220px;
+  overflow: auto;
+}
+
+#stepInfo {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #1565c0;
+}
+
+#image-grid {
+  position: relative;
+}
+
+#image-grid {
+  position: relative;
+}
+
+#slide-box {
+  top: 0;
+  left: 0;
+  border: 2px solid #1565c0; /* blue */
+}
+
+
+.kernel-card {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  min-width: 220px;
+}
+
+.kernel-card h3 {
+  margin-top: 0;
+}
+
+.kernel-card select {
+  margin-bottom: 10px;
+  padding: 5px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Deeplizard-Style CNN Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🧠 CNN Convolution & Pooling Visualizer</h1>
+<p class="subtitle">Editable image, filters, stride, padding, play animation</p>
+
+<div class="container">
+
+  <!-- IMAGE GRID -->
+   
+
+  <div>
+    <h3>Input Image (5×5)</h3>
+    <div id="image-grid" class="grid"></div>
+    <h4>Edit Image</h4>
+    <div id="image-inputs" class="grid"></div>
+  </div>
+
+  <!-- KERNEL -->
+  <div class="kernel-card">
+
+  <h3>Select Filter</h3>
+  <select id="filterSelect">
+    <option value="0">Filter 1</option>
+    <option value="1">Filter 2</option>
+    <option value="2">Filter 3</option>
+  </select>
+
+  <h3>Kernel (3×3)</h3>
+  <div id="kernel-grid" class="grid small"></div>
+
+  <h4>Edit Kernel</h4>
+  <div id="kernel-inputs" class="grid small"></div>
+
+</div>
+
+  <!-- CONTROLS + CALC -->
+  <div>
+    <h3>Controls</h3>
+
+    <label>
+      Stride:
+      <select id="strideSelect">
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+    </label>
+    <br><br>
+
+    <label>
+      <input type="checkbox" id="paddingToggle"> Padding (Zero)
+    </label>
+
+    <br><br>
+
+    <button id="prevBtn">◀ Prev</button>
+    <button id="nextBtn">Next ▶</button>
+    <button id="playBtn">▶ Play</button>
+    <button id="stopBtn">⏹ Stop</button>
+
+    <br><br>
+    Speed:
+    <input type="range" id="speedRange" min="300" max="1500" value="1000">
+
+    <div id="stepInfo">Step: 1 / 1</div>
+
+    <h3>Calculation</h3>
+    <pre id="calculation-box"></pre>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
